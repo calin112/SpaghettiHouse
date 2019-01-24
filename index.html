@@ -13,6 +13,7 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
     <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Aguafina+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -23,7 +24,7 @@
   </head>
   <body>
     <div class="section">
-      <h1><img clas="main-logo" src=images/logo-black.png></img><br>Spaghetti House</h1>
+      <h1 class="title"><img class="main-logo img-fluid" src=images/logo-white.png></img><br><img class="main-brand img-fluid" src=images/brand-white.png></img></h1>
       <div class="video-container">
         <div class="color-overlay"></div>
         <video autoplay loop muted>
@@ -31,12 +32,12 @@
         </video>
       </div>
     </div>
-    <nav class="navbar navbar-custom navbar-expand-sm sticky-top">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
       <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Spaghetti House</a>
-        <div class="collapse navbar-collapse" id="collapse_target">
+      <a class="navbar-brand ml-5" href="#"><img class="brand" src="images/brand-white.png"></img></a>
+        <div class="collapse navbar-collapse mr-5" id="collapse_target">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="#">Inicio</a>
@@ -56,26 +57,31 @@
         </ul>
       </div>
     </nav>
-    <h1>Carta</h1>
-    <!-- Swiper -->
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/pizza 1.png" alt="Italian Trulli"></div>
-        <div class="swiper-slide"><img src="images/pizza 2.png" alt="Italian Trulli"></div>
-        <div class="swiper-slide"><img src="images/pizza 3.png" alt="Italian Trulli"></div>
-        <div class="swiper-slide"><img src="images/pizza 4.png" alt="Italian Trulli"></div>
-        <div class="swiper-slide"><img src="images/pizza 1.png" alt="Italian Trulli"></div>
-        <div class="swiper-slide"><img src="images/pizza 2.png" alt="Italian Trulli"></div>
-        <div class="swiper-slide"><img src="images/pizza 3.png" alt="Italian Trulli"></div>
-        <div class="swiper-slide"><img src="images/pizza 4.png" alt="Italian Trulli"></div>
-        <div class="swiper-slide"><img src="images/pizza 1.png" alt="Italian Trulli"></div>
-        <div class="swiper-slide"><img src="images/pizza 2.png" alt="Italian Trulli"></div>
+    <div class="container">
+      <h2>Nosotros</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 order-md-2 text-center text-md-left pr-md-5">
+          <img class="img-fluid" src="https://image.shutterstock.com/z/stock-photo-group-of-women-socialize-teamwork-happiness-concept-497374417.jpg"></img>
+        </div>
+        <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
+          <p>
+            Spaghetti House es más que un restaurante italiano, nace de la propuesta de fusionar lo mejor de la cocina italiana y de nuestra cocina mediterránea.
+            Nuestro éxito se basa en la elaboración de todos nuestros platos utilizando siempre los mejores productos y la experiencia de nuestros experimentados chefs.
+            En nuestros restaurantes de Salou y de Vilaseca, podrá encontrar una amplia variedad de platos italianos como pizzas, pasta, carpaccio, risotto… y de platos típicos de nuestra gastronomía.
+            También disponemos de una amplia oferta de platos sin gluten.
+            Nuestros restaurantes se encuentran muy bien situados, cerca de la playa, del pueblo pesquero de Cambrils y del parque tematico de Port Aventura.
+          </p>
+        </div>
       </div>
-      <!-- Add Arrows -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
     </div>
-    <h1>Nuestros ingredientes</h1>
+
+    <div class="container">
+      <h2>Carta</h2>
+      <div class="row">
+        <div class="col">
+    </div>
+
+    <h2>Nuestros ingredientes</h2>
     <div class="image"></div>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
     <br><br>
