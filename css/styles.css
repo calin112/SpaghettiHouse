@@ -17,7 +17,7 @@ h2 {
 
 .main-logo {
   z-index: 1;
-  max-width: 300px; }
+  max-width: 20rem; }
 
 .section {
   position: relative;
@@ -72,6 +72,7 @@ video {
 /* change the link color */
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.9);
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   padding: 30px 20px; }
 
@@ -79,9 +80,6 @@ video {
 .navbar-dark .nav-item.active .nav-link,
 .navbar-dark .nav-item:hover .nav-link {
   color: #ffffff; }
-
-.container {
-  max-width: 800px; }
 
 .swiper-container {
   width: 100%;
@@ -120,6 +118,47 @@ p {
   max-height: 6rem; }
 
 .brand {
-  max-height: 3rem; }
+  max-height: 3rem;
+  opacity: 0.9; }
+
+.brand:hover {
+  opacity: 1; }
+
+@media (max-width: 1199.98px) {
+  .brand {
+    max-height: 2.8rem; }
+
+  .main-logo {
+    max-width: 19rem; }
+
+  .main-brand {
+    max-height: 5.8rem; } }
+@media (max-width: 991.98px) {
+  .brand {
+    max-height: 2.6rem; }
+
+  .main-logo {
+    max-width: 18rem; }
+
+  .main-brand {
+    max-height: 5.6rem; } }
+@media (max-width: 767.98px) {
+  .brand {
+    max-height: 2.4rem; }
+
+  .main-logo {
+    max-width: 17rem; }
+
+  .main-brand {
+    max-height: 5.4rem; } }
+@media (max-width: 575.98px) {
+  .brand {
+    max-height: 2.2rem; }
+
+  .main-logo {
+    max-width: 16rem; }
+
+  .main-brand {
+    max-height: 5.2rem; } }
 
 /*# sourceMappingURL=styles.css.map */
