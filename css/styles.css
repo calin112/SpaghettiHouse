@@ -158,7 +158,10 @@ p {
     max-width: 18rem; }
 
   .main-brand {
-    max-height: 5.6rem; } }
+    max-height: 5.6rem; }
+
+  .fa {
+    visibility: hidden; } }
 @media (max-width: 767.98px) {
   .brand {
     max-height: 2.4rem; }
