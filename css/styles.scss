@@ -14,8 +14,14 @@ h1 {
 h2 {
   font-size: 4rem;
   text-align: center;
-  font-family: 'Aguafina Script', cursive;
+  font-family: 'Aguafina Script', sans-serif;
   color: black;
+  margin-bottom: 120px;
+
+}
+
+.white {
+  color: white;
 }
 
 .main-logo {
@@ -127,7 +133,7 @@ video {
 
 p {
   width: 100%;
-  max-width: 800px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .image {
@@ -156,8 +162,20 @@ p {
 .img-fluid {
 }
 
+.nosotros-img {
+  border-radius: 50%;
+  border-width: thick;
+  border-style: double;
+  border-color: black;
+}
+
 .section-container {
   padding: 120px 0;
+}
+
+.parallax-window {
+    min-height: 900px;
+    background: transparent;
 }
 
 .fa {
