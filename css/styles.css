@@ -16,9 +16,13 @@ h2 {
   color: black; }
 
 .main-logo {
-  z-index: 1;
   max-width: 20rem;
   opacity: 0.9; }
+
+.header-page {
+  padding-top: 70px;
+  position: absolute;
+  text-align: center; }
 
 .section {
   position: relative;
@@ -33,7 +37,8 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: -1; }
 
 video {
   min-width: 100%;
@@ -117,7 +122,8 @@ p {
 
 .main-brand {
   max-height: 6rem;
-  opacity: 0.9; }
+  opacity: 0.9;
+  padding: 0 20px; }
 
 .brand {
   max-height: 3rem;
@@ -138,6 +144,9 @@ p {
   z-index: 2;
   color: white; }
 
+a:hover {
+  text-decoration: none !important; }
+
 @media (max-width: 1199.98px) {
   .brand {
     max-height: 2.8rem; }
@@ -149,7 +158,11 @@ p {
     max-height: 5.8rem; }
 
   .navbar-nav .nav-link {
-    padding: 15px 10px !important; } }
+    padding: 15px 10px !important; }
+
+  .fa {
+    font-size: 27px;
+    width: 65px; } }
 @media (max-width: 991.98px) {
   .brand {
     max-height: 2.6rem; }
@@ -158,10 +171,7 @@ p {
     max-width: 18rem; }
 
   .main-brand {
-    max-height: 5.6rem; }
-
-  .fa {
-    visibility: hidden; } }
+    max-height: 5.6rem; } }
 @media (max-width: 767.98px) {
   .brand {
     max-height: 2.4rem; }
@@ -170,7 +180,11 @@ p {
     max-width: 17rem; }
 
   .main-brand {
-    max-height: 5.4rem; } }
+    max-height: 5.4rem; }
+
+  .fa {
+    font-size: 25px;
+    width: 60px; } }
 @media (max-width: 575.98px) {
   .brand {
     max-height: 2.2rem; }

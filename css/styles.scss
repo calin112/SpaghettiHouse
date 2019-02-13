@@ -19,9 +19,14 @@ h2 {
 }
 
 .main-logo {
-  z-index: 1;
   max-width: 20rem;
   opacity: 0.9;
+}
+
+.header-page {
+  padding-top: 70px;
+  position: absolute;
+  text-align: center;
 }
 
 .section {
@@ -39,6 +44,7 @@ h2 {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: -1;
 }
 
 video {
@@ -135,6 +141,7 @@ p {
 .main-brand {
   max-height: 6rem;
   opacity: 0.9;
+  padding: 0 20px;
 }
 
 .brand {
@@ -161,7 +168,10 @@ p {
   margin: 5px 2px;
   z-index: 2;
   color: white;
+}
 
+a:hover {
+  text-decoration: none !important;
 }
 
 // Large devices (desktops, less than 1200px)
@@ -178,6 +188,10 @@ p {
   .navbar-nav .nav-link {
     padding: 15px 10px !important;
   }
+  .fa {
+    font-size: 27px;
+    width: 65px;
+  }
 }
 
 // Medium devices (tablets, less than 992px)
@@ -191,9 +205,6 @@ p {
   .main-brand {
     max-height: 5.6rem;
   }
-  .fa {
-    visibility: hidden;
-  }
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -206,6 +217,10 @@ p {
   }
   .main-brand {
     max-height: 5.4rem;
+  }
+  .fa {
+    font-size: 25px;
+    width: 60px;
   }
 }
 
