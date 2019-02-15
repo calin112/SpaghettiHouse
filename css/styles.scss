@@ -46,6 +46,10 @@ h2 {
   overflow: hidden;
 }
 
+#Nosotros {
+  padding-bottom: 120px;
+}
+
 .video-container {
   position: absolute;
   top: 0;
@@ -235,7 +239,11 @@ a:hover {
 
 .container2 {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto
+}
+
+.staff {
+  width: 300px;
 }
 
 // Large devices (desktops, less than 1200px)

@@ -38,6 +38,9 @@ h2 {
   justify-content: center;
   overflow: hidden; }
 
+#Nosotros {
+  padding-bottom: 120px; }
+
 .video-container {
   position: absolute;
   top: 0;
@@ -196,6 +199,9 @@ a:hover {
 .container2 {
   max-width: 1200px;
   margin: 0 auto; }
+
+.staff {
+  width: 300px; }
 
 @media (max-width: 1199.98px) {
   h2 {
