@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
   font-family: 'Aguafina Script', sans-serif;
   color: black;
@@ -22,6 +22,7 @@ h2 {
 
 .white {
   color: white;
+  opacity: 0.9;
 }
 
 .main-logo {
@@ -64,7 +65,7 @@ video {
   left: 0;
   background-color: black;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   opacity: 0.2;
 }
 
@@ -107,30 +108,6 @@ video {
     color: #ffffff;
 }
 
-.swiper-container {
-  width: 100%;
-  height: 500px;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
 p {
   width: 100%;
   font-family: 'Open Sans', sans-serif;
@@ -159,9 +136,6 @@ p {
   opacity: 1;
 }
 
-.img-fluid {
-}
-
 .nosotros-img {
   border-radius: 50%;
   border-width: thick;
@@ -170,11 +144,11 @@ p {
 }
 
 .section-container {
-  padding: 120px 0;
+  padding-top: 120px;
 }
 
 .parallax-window {
-    min-height: 900px;
+
     background: transparent;
 }
 
@@ -188,12 +162,87 @@ p {
   color: white;
 }
 
+.fa-tripadvisor:hover {
+  color: #00af87;
+}
+
+.fa-map-marker:hover {
+  color: #FE7569;
+}
+
+.fa-phone:hover {
+  color: #fd7e14;
+}
+
+.fa-envelope:hover {
+  color: #4c6ef5;
+}
+
 a:hover {
   text-decoration: none !important;
 }
 
+.col-md-6 {
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  text-align: center;
+  .autor {
+    margin: 0;
+    color: white;
+    font-family: 'Cantarell', sans-serif;
+    //text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 19px;
+    opacity: 0.9;
+  }
+}
+
+.speechbubble {
+  p {
+    margin: 0;
+  }
+  position: relative;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 30px;
+
+  //color: #222;
+  width: 70%;
+  border-radius: 10px;
+}
+
+.speechbubble::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  margin-left: -12px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid rgba(255,255,255,0.72);
+}
+
+.profilepic {
+  padding: 30px 0;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.container2 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
+  h2 {
+    font-size: 4.8rem;
+  }
   .brand {
     max-height: 2.8rem;
   }
@@ -214,6 +263,9 @@ a:hover {
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+  h2 {
+    font-size: 4.6rem;
+  }
   .brand {
     max-height: 2.6rem;
   }
@@ -227,6 +279,9 @@ a:hover {
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
+  h2 {
+    font-size: 4.4rem;
+  }
   .brand {
     max-height: 2.4rem;
   }
@@ -240,10 +295,16 @@ a:hover {
     font-size: 25px;
     width: 60px;
   }
+  .col-md-6 {
+    padding: 0;
+  }
 }
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+  h2 {
+    font-size: 4.2rem;
+  }
   .brand {
     max-height: 2.2rem;
   }
