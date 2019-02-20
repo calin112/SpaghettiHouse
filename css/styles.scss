@@ -14,10 +14,14 @@ h1 {
 h2 {
   font-size: 5rem;
   text-align: center;
-  font-family: 'Aguafina Script', sans-serif;
+  font-family: 'Dancing Script', bold;
   color: black;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
+}
 
+.slogan {
+  color: white;
+  padding: 140px 0;
 }
 
 .white {
@@ -47,6 +51,14 @@ h2 {
 }
 
 #Nosotros {
+  padding-bottom: 120px;
+}
+
+#Carta {
+  padding-bottom: 120px;
+}
+
+#Equipo {
   padding-bottom: 120px;
 }
 
@@ -152,7 +164,6 @@ p {
 }
 
 .parallax-window {
-
     background: transparent;
 }
 
@@ -245,6 +256,12 @@ a:hover {
 .staff {
   width: 300px;
 }
+
+#Takeaway:hover {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {

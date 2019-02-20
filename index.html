@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <!-- baguetteBox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <!-- Gallery CSS -->
+    <link rel="stylesheet" href="css/fluid-gallery.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Aguafina+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Tenor+Sans" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Fjalla+One|Cantarell:400,400italic,700italic,700" rel="stylesheet" type="text/css" />
-
+    <link href="http://fonts.googleapis.com/css?family=Fjalla+One|Cantarell:400,400italic,700italic,700" rel="stylesheet" type="text/css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <title>Spaghetti House</title>
@@ -60,13 +61,16 @@
               <a class="nav-link" href="#Opiniones">Opiniones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Carta</a>
+              <a class="nav-link" href="#Carta">Carta</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#Equipo">Equipo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Para llevar</a>
+              <a class="nav-link" href="#Takeaway">Para llevar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Galeria">Galería</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contacto</a>
@@ -137,6 +141,28 @@
         </div>
       </div>
     </section>
+    <section class="section-container" id="Carta">
+      <div class="container">
+        <h2>La Carta</h2>
+        <p>1. Jamón serrano con dos bruschettas (tostadas con tomate).................................9.95</p>
+        <p>2. Carpaccio veneciano con focaccia (solomillo de buey con parmesano) .....................12.95</p>
+        <p>3. Queso Provolone italiano a la brasa con focaccia .......................................9.85</p>
+        <p>4. Gambas del Mediterráneo a la plancha ...................................................12.85</p>
+        <p>5. Calamares a la romana ..................................................................10.50</p>
+        <p>6. Mejillones a la sarda (salsa marinera al gratén) .......................................10.25</p>
+        <p>7. Patatas Bravas .........................................................................5.50</p>
+        <p>8. Patatas Fritas .........................................................................4.00</p>
+        <p>9. Bruschetta con tomate, aceite de oliva extra y orégano (4 uds) .........................4.50</p>
+        <p>10. Pan de ajo (4 uds) ....................................................................3.85</p>
+        <p>11. Pan de ajo y mozzarella (4 uds) .......................................................4.60</p>
+        <p>12. Focaccia con aceite de oliva y orégano ................................................3.85</p>
+        <p>13. Pan y mantequilla .....................................................................2.30</p>
+        <p>14. Pan ...................................................................................1.60</p>
+      </div>
+    </section>
+    <section class="parallax-window" id="Frase" data-parallax="scroll" data-image-src="../SpaghettiHouse/images/restaurant-2.jpg">
+      <h2 class="slogan">"Frase Bonita."</h2>
+    </section>
     <section class="section-container" id="Equipo">
       <div class="container">
         <h2>Nuestro equipo</h2>
@@ -158,17 +184,77 @@
           </div>
       </div>
     </section>
+    <a class="slogan-link" href="https://www.just-eat.es/">
+      <section class="parallax-window" id="Takeaway" data-parallax="scroll" data-image-src="../SpaghettiHouse/images/takeaway.jpg">
+        <h2 class="slogan">Para llevar</h2>
+      </section>
+    </a>
+    <section class="section-container" id="Galeria">
+      <h2>Galería</h2>
+      <div class="container">
+          <div class="tz-gallery">
+            <div class="row mb-3">
+              <div class="col-md-4">
+                <div class="card">
+                  <a class="lightbox" href="images/gallery-1.jpg">
+                    <img src="images/gallery-1.jpg" alt="Park" class="card-img-top">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <a class="lightbox" href="images/gallery-2.jpg">
+                    <img src="images/gallery-2.jpg" alt="Park" class="card-img-top">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <a class="lightbox" href="images/gallery-3.jpg">
+                    <img src="images/gallery-3.jpg" alt="Park" class="card-img-top">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <a class="lightbox" href="images/gallery-4.jpg">
+                      <img src="images/gallery-4.jpg" alt="Park" class="card-img-top">
+                    </a>
+                  </div>
+                </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <a class="lightbox" href="images/gallery-5.jpg">
+                    <img src="images/gallery-5.jpg" alt="Park" class="card-img-top">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <a class="lightbox" href="images/gallery-6.jpg">
+                    <img src="images/gallery-6.jpg" alt="Park" class="card-img-top">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Parallax.js then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first, then Parallax.js then Popper.js, then Bootstrap JS, then baguetteBox -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script src="../SpaghettiHouse/js/parallax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
-    <!-- Swiper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
 
     <!-- Main JS -->
     <script src="js/main.js"></script>
