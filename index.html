@@ -85,7 +85,7 @@
         <h2>Nosotros</h2>
         <div class="grid-container row align-items-center">
           <div class="col-md-6 order-md-2 text-center text-md-left pr-md-5">
-            <img class="img-fluid nosotros-img" src="images/_MG_7614.jpg"></img>
+            <img class="img-fluid" src="images/_MG_7614_2.jpg"></img>
           </div>
           <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
             <p><strong>
@@ -321,7 +321,7 @@
       </div>
     </section>
     <section class="parallax-window" id="Frase" data-parallax="scroll" data-image-src="../SpaghettiHouse/images/restaurant-2.jpg">
-      <h2 class="slogan">"Frase Bonita."</h2>
+      <h2 class="slogan">"No hay pan que por bien no venga"</h2>
     </section>
     <section class="section-container" id="Equipo">
       <div class="container">
@@ -340,7 +340,7 @@
           <div class="col-md-4 text-center">
             <img class="img-fluid staff nosotros-img" src="images/_MG_7601.jpg" alt=""></img>
             <p>Camarero</p>
-            <p>Fulanito de Cual</p>
+            <p>Ismael</p>
           </div>
       </div>
     </section>
@@ -409,13 +409,13 @@
           <div class="col-md-6">
             <h3 class="contact-title">CONTACTO</h3>
             <div class="contact-section">
-              <i class="fa fa-map-marker"></i><p>Plaça de la Constitució, 8 - 43850 Cambrils, Tarragona</p>
+              <i class="fa fa-map-marker"></i><p>Carrer de Navarra, 7 - 43840 Salou, Tarragona</p>
             </div>
             <div class="contact-section">
-              <i class="fa fa-envelope"></i><p><a href="mailto:info@lumarc.es">info@lumarc.es</a></p>
+              <i class="fa fa-envelope"></i><p><a href="mailto:info@spaghettihousesalou.es">info@spaghettihousesalou.es</a></p>
             </div>
             <div class="contact-section">
-              <i class="fa fa-phone"></i><p>+34 977 36 59 21</p>
+              <i class="fa fa-phone"></i><p>+34 977 38 50 64</p>
             </div>
             <div class="row social-row">
               <div class="col-2 social">
@@ -425,34 +425,41 @@
                 <a href="#" class="fa fa-facebook"></a>
               </div>
               <div class="col-2 social">
-                <a href="#" class="fa fa-tripadvisor"></a>
+                <a href="#" class="fa fa-linkedin"></a>
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <h3 class="contact-title">HORARIO</h3>
             <ul>
-              <li><p class="split-para"><strong>LUNES</strong><span>10:00-14:00</span></p></li>
-              <li><p class="split-para"><strong>MARTES</strong><span>10:00-14:00</span></p></li>
-              <li><p class="split-para"><strong>MIÉRCOLES</strong><span>10:00-14:00</span></p></li>
-              <li><p class="split-para"><strong>JUEVES</strong><span>10:00-14:00</span></p></li>
-              <li><p class="split-para"><strong>VIERNES</strong><span>10:00-14:00</span></p></li>
-              <li><p class="split-para"><strong>SÁBADO</strong><span>10:00-14:00</span></p></li>
-              <li><p class="split-para"><strong>DOMINGO</strong><span>10:00-14:00</span></p></li>
+              <li><p class="split-para"><strong>LUNES</strong><span>12:00-00:00</span></p></li>
+              <li><p class="split-para"><strong>MARTES</strong><span>12:00-00:00</span></p></li>
+              <li><p class="split-para"><strong>MIÉRCOLES</strong><span>12:00-00:00</span></p></li>
+              <li><p class="split-para"><strong>JUEVES</strong><span>12:00-00:00</span></p></li>
+              <li><p class="split-para"><strong>VIERNES</strong><span>12:00-00:00</span></p></li>
+              <li><p class="split-para"><strong>SÁBADO</strong><span>12:00-00:00</span></p></li>
+              <li><p class="split-para"><strong>DOMINGO</strong><span>12:00-00:00</span></p></li>
             </ul>
+
           </div>
         </div>
         <h3 class="contact-title map-title">MAPA</h3>
       </div>
-      <div id="googleMap" style="width:100%; height: 400px;"></div>
+      <div id="map" style="width:100%; height: 400px;"></div>
       <script>
-        function myMap() {
-          var mapProp= {
-            center:new google.maps.LatLng(51.508742,-0.120850),
-            zoom:5,
-          };
-          var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-        }
+      var map;
+      function myMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: {lat: 41.075899, lng: 1.147025}
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 41.075899, lng: 1.147025},
+          map: map,
+          title: 'Hello World!'
+        });
+      }
       </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCavxjwbTfYCv3inmDLZxj_C7uXR-IjLuI&callback=myMap"></script>
     </footer>

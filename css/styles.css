@@ -275,10 +275,10 @@ footer {
       color: white; }
     footer .contact-section p {
       display: inline;
-      margin-left: 30px; }
+      margin-left: 10px; }
   footer .social-row {
-    margin-top: 60px;
-    margin-bottom: 60px; }
+    margin-top: 30px;
+    text-align: center; }
   footer .map-title {
     margin-top: 40px; }
   footer li {
@@ -294,7 +294,6 @@ footer {
       margin-right: 40px;
       text-align: right; }
   footer .social {
-    text-align: center;
     font-size: 40px; }
     footer .social .fa-instagram {
       color: white; }
