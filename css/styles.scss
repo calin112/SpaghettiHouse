@@ -116,7 +116,7 @@ body {
 
 
 a:hover {
-  //text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 h1 {
@@ -173,6 +173,7 @@ h2 {
     margin: 5px 2px;
     z-index: 2;
     color: white;
+    transition: 0.2s;
   }
 
   .fa-facebook:hover {
@@ -209,6 +210,40 @@ h2 {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+.flag {
+  height: 20px;
+}
+#btt {
+  display: block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  text-align: center;
+  padding-top: 10px;
+  z-index: 8000;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  button {
+    background: rgba(0,0,0,0.35);
+  }
+  .dropdown-menu {
+    background-color: rgba(0,0,0,0.35);
+  }
+  .dropdown-item {
+    color: white;
+  }
+  .dropdown-item:hover {
+    background-color: rgba(0,0,0,0.4);
+  }
+  a {
+    cursor: pointer;
+  }
 }
 
 #Nosotros, #Carta, #Equipo {
@@ -252,10 +287,11 @@ h2 {
   .split-para {
     display: block;
     margin: 10px 10px 10px 0;
+    width: 300px;
     span {
       display: block;
       float: right;
-      width: 50%;
+      right: 50%;
       margin-left: 10px;
       margin-right: 10px;
       text-align: right;
@@ -466,9 +502,14 @@ p.bold {
   width: 300px;
 }
 
+#Takeaway {
+  transition: 0.5s;
+}
+
 #Takeaway:hover {
   display: block;
   background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.5s;
 }
 
 .tz-gallery {
@@ -479,6 +520,11 @@ p.bold {
 #Galeria {
   .lightbox:after {
     background-color: rgba(204,173,82, 0.6) !important;
+  }
+  .row {
+    margin-bottom: 0 !important;
+  }
+  .col-md-4 {
   }
 }
 

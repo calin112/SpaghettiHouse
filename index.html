@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <!-- Gallery CSS -->
     <link rel="stylesheet" href="css/fluid-gallery.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Aguafina+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
@@ -22,6 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/styles.css">
+
     <title>Spaghetti House</title>
     <link rel="icon"
       type="image/png"
@@ -32,7 +35,7 @@
     <div class="preloader">
     </div>
     <div class="section">
-      <div class="header-page">
+      <div class="header-page" data-aos="fade-up" data-aos-duration="2500">
         <img class="main-logo img-fluid" src=images/logo-white.png></img>
         <br>
         <img class="main-brand img-fluid" src=images/brand-white.png></img>
@@ -45,7 +48,7 @@
       </div>
       <div class="video-container">
         <div class="color-overlay"></div>
-        <video id="myVideo" autoplay loop muted>
+        <video id="myVideo" loop muted>
           <source src="video.mp4" type="video/mp4">
         </video>
       </div>
@@ -59,47 +62,57 @@
           <div class="collapse navbar-collapse justify-content-end" id="collapse_target">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link nav-hide" href="#Nosotros">Nosotros</a>
+              <a class="nav-link nav-hide lang" key="nosotros" href="#Nosotros">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-hide" href="#Opiniones">Opiniones</a>
+              <a class="nav-link nav-hide lang" key="opiniones" href="#Opiniones">Opiniones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-hide" href="#Carta">Carta</a>
+              <a class="nav-link nav-hide lang" key="carta" href="#Carta">Carta</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-hide" href="#Equipo">Equipo</a>
+              <a class="nav-link nav-hide lang" key="equipo" href="#Equipo">Equipo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-hide" href="#Takeaway">Para llevar</a>
+              <a class="nav-link nav-hide lang" key="takeaway" href="#Takeaway">Para llevar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-hide" href="#Galeria">Galería</a>
+              <a class="nav-link nav-hide lang" key="galeria" href="#Galeria">Galería</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-hide" href="#Contacto">Contacto</a>
+              <a class="nav-link nav-hide lang" key="contacto" href="#Contacto">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <div class="dropup" id="btt">
+      <button type="button" class="btn btn-secondary dropdown-toggle lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" key="idioma">
+        Español
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item translate" id="es">Español</a>
+        <a class="dropdown-item translate" id="ca">Català</a>
+        <a class="dropdown-item translate" id="en">English</a>
+        <a class="dropdown-item translate" id="ru">Pусский</a>
+      </div>
+    </div>
     <section class="section-container" id="Nosotros">
       <div class="container">
-        <h2>Nosotros</h2>
+        <h2 class="lang" data-aos="fade-down" data-aos-duration="1500" key="nosotros">Nosotros</h2>
         <div class="grid-container row align-items-center">
           <div class="col-md-6 order-md-2 text-center text-md-left pr-md-5">
-            <img class="img-fluid" src="images/_MG_7614_2.jpg"></img>
+            <img class="img-fluid" data-aos="fade-left" data-aos-duration="2000" src="images/_MG_7614_2.jpg"></img>
           </div>
           <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
-            <p><strong>
-              Spaghetti House es más que un restaurante italiano, nace de la propuesta de fusionar lo mejor de la cocina italiana y de nuestra cocina mediterránea.
-              Nuestro éxito se basa en la elaboración de todos nuestros platos utilizando siempre los mejores productos y la experiencia de nuestros experimentados chefs.
+            <p><strong class="lang" data-aos="fade-right" data-aos-duration="2000" key="np1">
+              Spaghetti House es más que un restaurante italiano, nace de la propuesta de fusionar lo mejor de la cocina italiana y de nuestra cocina mediterránea. Nuestro éxito se basa en la elaboración de todos nuestros platos utilizando siempre los mejores productos y la experiencia de nuestros experimentados chefs.
             </strong></p>
-            <p>
+            <p class="lang" data-aos="fade-right" data-aos-duration="2000" key="np2">
               En nuestros restaurantes de Salou y de Vilaseca, podrá encontrar una amplia variedad de platos italianos como pizzas, pasta, carpaccio, risotto… y de platos típicos de nuestra gastronomía.
               También disponemos de una amplia oferta de platos sin gluten.
             </p>
-            <p>
+            <p class="lang" data-aos="fade-right" data-aos-duration="2000" key="np3">
               Nuestros restaurantes se encuentran muy bien situados, cerca de la playa, del pueblo pesquero de Cambrils y del parque tematico de Port Aventura.
             </p>
           </div>
@@ -108,48 +121,48 @@
     </section>
     <section class="section-container parallax-window" id="Opiniones" data-parallax="scroll" data-image-src="./images/restaurant-1.jpg">
       <div class="container">
-        <h2 class="white">Qué opinan nuestros clientes...</h2>
+        <h2 class="white lang" data-aos="fade-down" data-aos-duration="1500" key="ot">Qué opinan nuestros clientes...</h2>
         <div class="grid-container row justify-content-center">
-          <div class="col-md-6">
+          <div class="col-md-6"  data-aos="fade-right" data-aos-duration="2000">
             <div class="speechbubble">
-              <p><strong>"¡Un 10 por la gran carta de comida sin gluten de la que disponen!"</strong></p>
+              <p><strong class="lang" key="op1">"¡Un 10 por la gran carta de comida sin gluten de la que disponen!"</strong></p>
             </div>
-            <img class="img-fluid profilepic" src="https://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/9a/avatar.jpg" alt="">
-            <p class="autor">Opinión de <strong>ELISABET R</strong></p>
+            <img class="img-fluid profilepic"src="https://media-cdn.tripadvisor.com/media/photo-l/01/2a/fd/9a/avatar.jpg" alt="">
+            <p class="autor"><strong>ELISABET R</strong></p>
           </div>
-          <div class="col-md-6 text-center">
+          <div class="col-md-6 text-center" data-aos="fade-left" data-aos-duration="2000">
             <div class="speechbubble">
-              <p><strong>"Las pizzas están buenísimas y la pasta también. Las raciones son abundantes."</strong></p>
+              <p><strong class="lang" key="op2">"Las pizzas están buenísimas y la pasta también. Las raciones son abundantes."</strong></p>
             </div>
             <a href="https://www.tripadvisor.es/ShowUserReviews-g562814-d5491134-r443497433-Spaghetti_House-Salou_Costa_Dorada_Province_of_Tarragona_Catalonia.html" target="_blank">
               <img class="img-fluid profilepic" src="https://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/54/avatar027.jpg" alt="">
             </a>
-            <p class="autor">Opinión de <strong>TATO RIBAS</strong></p>
+            <p class="autor"><strong>TATO RIBAS</strong></p>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-6 text-center">
+          <div class="col-md-6 text-center"  data-aos="fade-right" data-aos-duration="2000">
             <div class="speechbubble">
-              <p><strong>"Todos los platos que pedimos estaban realmente buenos, se notaba que eran caseros."</strong></p>
+              <p><strong class="lang" key="op3">"Todos los platos que pedimos estaban realmente buenos, se notaba que eran caseros."</strong></p>
             </div>
             <img class="img-fluid profilepic" src="https://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/96/avatar022.jpg" alt="">
-            <p class="autor">Opinión de <strong>SANDRIX2016</strong></p>
+            <p class="autor"><strong>SANDRIX2016</strong></p>
           </div>
-          <div class="col-md-6 text-center">
+          <div class="col-md-6 text-center" data-aos="fade-left" data-aos-duration="2000">
             <div class="speechbubble">
-              <p><strong>"Pizzería muy bonita, con una comida y atención excelentes."</strong></p>
+              <p><strong class="lang" key="op4">"Pizzería muy bonita, con una comida y atención excelentes."</strong></p>
             </div>
             <img class="img-fluid profilepic" src="https://media-cdn.tripadvisor.com/media/photo-l/01/2e/70/7c/avatar063.jpg" alt="">
-            <p class="autor">Opinión de <strong>ALBERTUUSS</strong></p>
+            <p class="autor"><strong>ALBERTUUSS</strong></p>
           </div>
         </div>
       </div>
     </section>
     <section class="section-container" id="Carta">
       <div class="container">
-        <h2>La Carta</h2>
+        <h2 data-aos="fade-down" data-aos-duration="1500" class="lang" key="ct">La Carta</h2>
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="zoom-in" data-aos-duration="2000">
             <h2 class="menu-title">ENTRANTES</h2>
             <ul>
               <li>
@@ -157,7 +170,25 @@
                   <img width="120" height="120" src="images/pizza 1.png">
                 </div>
                 <div class="info-cont">
-                  <h3 class="split-para">Pizza<span>100€</span></h3>
+                  <h3 class="split-para">Carpaccio Veneciano<span>12,95€</span></h3>
+                  <p>Solomillo de buey, parmesano, focaccia</p>
+                </div>
+              </li>
+              <li>
+                <div class="img-cont">
+                  <img width="120" height="120" src="images/pizza 1.png">
+                </div>
+                <div class="info-cont">
+                  <h3 class="split-para">Crema zucchini<span>6,80€</span></h3>
+                  <p>Crema de calabacín, picatostes, parmesano</p>
+                </div>
+              </li>
+              <li>
+                <div class="img-cont">
+                  <img width="120" height="120" src="images/pizza 1.png">
+                </div>
+                <div class="info-cont">
+                  <h3 class="split-para">Insalata Caprese<span>9,50€</span></h3>
                   <p>Demasiada pizza como para aguantarla, tiene muchos ingredientes y esta muy buena</p>
                 </div>
               </li>
@@ -166,32 +197,14 @@
                   <img width="120" height="120" src="images/pizza 1.png">
                 </div>
                 <div class="info-cont">
-                  <h3 class="split-para">Pizza<span>100€</span></h3>
-                  <p>Demasiada pizza como para aguantarla, tiene muchos ingredientes y esta muy buena</p>
-                </div>
-              </li>
-              <li>
-                <div class="img-cont">
-                  <img width="120" height="120" src="images/pizza 1.png">
-                </div>
-                <div class="info-cont">
-                  <h3 class="split-para">Pizza<span>100€</span></h3>
-                  <p>Demasiada pizza como para aguantarla, tiene muchos ingredientes y esta muy buena</p>
-                </div>
-              </li>
-              <li>
-                <div class="img-cont">
-                  <img width="120" height="120" src="images/pizza 1.png">
-                </div>
-                <div class="info-cont">
-                  <h3 class="split-para">Pizza<span>100€</span></h3>
+                  <h3 class="split-para">Insalata del Cheff<span>9,85€</span></h3>
                   <p>Demasiada pizza como para aguantarla, tiene muchos ingredientes y esta muy buena</p>
                 </div>
               </li>
             </ul>
           </div>
           <div class="col-md-2"></div>
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="zoom-in" data-aos-duration="2000">
             <h2 class="menu-title">PRINCIPALES</h2>
             <ul>
               <li>
@@ -199,8 +212,8 @@
                   <img width="120" height="120" src="images/pizza 1.png">
                 </div>
                 <div class="info-cont">
-                  <h3 class="split-para">Pizza<span>100€</span></h3>
-                  <p>Demasiada pizza como para aguantarla, tiene muchos ingredientes y esta muy buena</p>
+                  <h3 class="split-para">Pizza<span>desde 8,95€</span></h3>
+                  <p>De todos los tipos, desde Margherita hasta la Affumicata</p>
                 </div>
               </li>
               <li>
@@ -208,8 +221,8 @@
                   <img width="120" height="120" src="images/pizza 1.png">
                 </div>
                 <div class="info-cont">
-                  <h3 class="split-para">Pizza<span>100€</span></h3>
-                  <p>Demasiada pizza como para aguantarla, tiene muchos ingredientes y esta muy buena</p>
+                  <h3 class="split-para">Pasta<span>desde 8,75€</span></h3>
+                  <p>Se puede elegir todo tipo de pastas, y las salsas varían desde la Alfredo hasta la "Gorgonzola e noci"</p>
                 </div>
               </li>
               <li>
@@ -217,8 +230,8 @@
                   <img width="120" height="120" src="images/pizza 1.png">
                 </div>
                 <div class="info-cont">
-                  <h3 class="split-para">Pizza<span>100€</span></h3>
-                  <p>Demasiada pizza como para aguantarla, tiene muchos ingredientes y esta muy buena</p>
+                  <h3 class="split-para">Pasta al forno<span>desde 9,75€</span></h3>
+                  <p>Lasaña de carne o canelones de carne, espinacas o frutas de mar</p>
                 </div>
               </li>
               <li>
@@ -226,15 +239,15 @@
                   <img width="120" height="120" src="images/pizza 1.png">
                 </div>
                 <div class="info-cont">
-                  <h3 class="split-para">Pizza<span>100€</span></h3>
-                  <p>Demasiada pizza como para aguantarla, tiene muchos ingredientes y esta muy buena</p>
+                  <h3 class="split-para">Risotto<span>desde 10,50€</span></h3>
+                  <p>Gran variedad de arroces, ¡incluyendo la paella!</p>
                 </div>
               </li>
             </ul>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-5" data-aos="zoom-in" data-aos-duration="2000">
             <h2 class="menu-title">POSTRES</h2>
             <ul>
               <li>
@@ -242,8 +255,7 @@
                   <img width="120" height="120" src="images/pizza 1.png">
                 </div>
                 <div class="info-cont">
-                  <h3 class="split-para">Pizza<span>100€</span></h3>
-                  <p>Demasiada pizza como para aguantarla, tiene muchos ingredientes y esta muy buena</p>
+                  <h3 class="split-para">Tiramisú<span>5,60€</span></h3>
                 </div>
               </li>
               <li>
@@ -251,8 +263,8 @@
                   <img width="120" height="120" src="images/pizza 1.png">
                 </div>
                 <div class="info-cont">
-                  <h3 class="split-para">Pizza<span>100€</span></h3>
-                  <p>Demasiada pizza como para aguantarla, tiene muchos ingredientes y esta muy buena</p>
+                  <h3 class="split-para">Pannacotta alla fragola<span>4,75€</span></h3>
+                  <p>Flan de nata con fresa</p>
                 </div>
               </li>
               <li>
@@ -260,8 +272,8 @@
                   <img width="120" height="120" src="images/pizza 1.png">
                 </div>
                 <div class="info-cont">
-                  <h3 class="split-para">Pizza<span>100€</span></h3>
-                  <p>Demasiada pizza como para aguantarla, tiene muchos ingredientes y esta muy buena</p>
+                  <h3 class="split-para">Tarta de queso<span>5,60€</span></h3>
+                  <p>Queso, moras y arándanos</p>
                 </div>
               </li>
               <li>
@@ -269,13 +281,14 @@
                   <img width="120" height="120" src="images/pizza 1.png">
                 </div>
                 <div class="info-cont">
-                  <h3 class="split-para">Pizza<span>100€</span></h3>
-                  <p>Demasiada pizza como para aguantarla, tiene muchos ingredientes y esta muy buena</p>
+                  <h3 class="split-para">Profiteroles <span>5,55€</span></h3>
+                  <p>Con chocolate caliente</p>
                 </div>
               </li>
             </ul>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-2"></div>
+          <div class="col-md-5" data-aos="zoom-in" data-aos-duration="2000">
             <h2 class="menu-title">VINOS</h2>
             <ul>
               <li>
@@ -283,7 +296,25 @@
                   <img width="120" height="120" src="images/pizza 1.png">
                 </div>
                 <div class="info-cont">
-                  <h3 class="split-para">Pizza<span>100€</span></h3>
+                  <h3 class="split-para">Marqués de Cáceres<span>100€</span></h3>
+                  <p>Rioja</p>
+                </div>
+              </li>
+              <li>
+                <div class="img-cont">
+                  <img width="120" height="120" src="images/pizza 1.png">
+                </div>
+                <div class="info-cont">
+                  <h3 class="split-para">Lambrusco<span>100€</span></h3>
+                  <p>Italia</p>
+                </div>
+              </li>
+              <li>
+                <div class="img-cont">
+                  <img width="120" height="120" src="images/pizza 1.png">
+                </div>
+                <div class="info-cont">
+                  <h3 class="split-para">Torres de Casta<span>100€</span></h3>
                   <p>Demasiada pizza como para aguantarla, tiene muchos ingredientes y esta muy buena</p>
                 </div>
               </li>
@@ -292,26 +323,8 @@
                   <img width="120" height="120" src="images/pizza 1.png">
                 </div>
                 <div class="info-cont">
-                  <h3 class="split-para">Pizza<span>100€</span></h3>
-                  <p>Demasiada pizza como para aguantarla, tiene muchos ingredientes y esta muy buena</p>
-                </div>
-              </li>
-              <li>
-                <div class="img-cont">
-                  <img width="120" height="120" src="images/pizza 1.png">
-                </div>
-                <div class="info-cont">
-                  <h3 class="split-para">Pizza<span>100€</span></h3>
-                  <p>Demasiada pizza como para aguantarla, tiene muchos ingredientes y esta muy buena</p>
-                </div>
-              </li>
-              <li>
-                <div class="img-cont">
-                  <img width="120" height="120" src="images/pizza 1.png">
-                </div>
-                <div class="info-cont">
-                  <h3 class="split-para">Pizza<span>100€</span></h3>
-                  <p>Demasiada pizza como para aguantarla, tiene muchos ingredientes y esta muy buena</p>
+                  <h3 class="split-para">Sangre de Toro<span>100€</span></h3>
+                  <p>Penedés</p>
                 </div>
               </li>
             </ul>
@@ -324,41 +337,41 @@
       </div>
     </section>
     <section class="parallax-window" id="Frase" data-parallax="scroll" data-image-src="./images/restaurant-2.jpg">
-      <h2 class="slogan">"No hay pan que por bien no venga"</h2>
+      <h2 class="slogan" data-aos="zoom-in" data-aos-duration="3000">"Cocinar con amor te alimenta el alma"</h2>
     </section>
     <section class="section-container" id="Equipo">
       <div class="container">
-        <h2>Nuestro equipo</h2>
+        <h2 data-aos="fade-down" data-aos-duration="1500">Nuestro equipo</h2>
         <div class="row justify-content-center">
-          <div class="col-md-3 text-center">
+          <div class="col-md-3 text-center" data-aos="fade-right" data-aos-duration="2000">
             <img class="img-fluid staff equipo-img" src="images/team-1.jpg" alt=""></img>
             <h3><strong>Cocinera</strong></h3>
-            <h4>Fulanita de Tal</h4>
+            <h4>Janet</h4>
             <p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.</p>
           </div>
-          <div class="col-md-3 text-center">
+          <div class="col-md-3 text-center" data-aos="fade-up" data-aos-duration="2000">
             <img class="img-fluid staff equipo-img" src="images/team-2.jpg" alt=""></img>
             <h3><strong>Dueños</strong></h3>
-            <h4>Julia y </h4>
+            <h4>Julia y Antonio</h4>
             <p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.</p>
           </div>
-          <div class="col-md-3 text-center">
+          <div class="col-md-3 text-center" data-aos="fade-up" data-aos-duration="2000">
             <img class="img-fluid staff equipo-img" src="images/team-3.jpg" alt=""></img>
             <h3><strong>Camarero</strong></h3>
             <h4>Ismael</h4>
             <p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.</p>
           </div>
-          <div class="col-md-3 text-center">
+          <div class="col-md-3 text-center" data-aos="fade-left" data-aos-duration="2000">
             <img class="img-fluid staff equipo-img" src="images/team-4.jpg" alt=""></img>
             <h3><strong>Camarero</strong></h3>
-            <h4>Ismael</h4>
+            <h4>Jaime</h4>
             <p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula.</p>
           </div>
       </div>
     </section>
-    <a class="slogan-link" href="https://www.just-eat.es/">
+    <a class="slogan-link" href="https://www.just-eat.es/" target="_blank">
       <section class="parallax-window" id="Takeaway" data-parallax="scroll" data-image-src="./images/takeaway.jpg">
-        <h2 class="slogan">Para llevar</h2>
+        <h2 class="slogan" data-aos="zoom-in" data-aos-duration="3000">Para llevar</h2>
       </section>
     </a>
     <section class="section-container" id="Galeria">
@@ -481,7 +494,7 @@
       </div>
     </div>
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Parallax.js then Popper.js, then Bootstrap JS, then baguetteBox -->
+    <!-- jQuery first, then Parallax.js then Popper.js, then Bootstrap JS, then baguetteBox, then aos -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
       <script src="./js/parallax.min.js"></script>
@@ -490,6 +503,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script>
         baguetteBox.run('.tz-gallery');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 
     <!-- Main JS -->
