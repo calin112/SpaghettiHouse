@@ -74,7 +74,11 @@ var arrLang = {
     'op2' : '"Las pizzas están buenísimas y la pasta también. Las raciones son abundantes."',
     'op3' : '"Todos los platos que pedimos estaban realmente buenos, se notaba que eran caseros."',
     'op4' : '"Pizzería muy bonita, con una comida y atención excelentes."',
-    'ct' : 'La Carta'
+    'ct' : 'La Carta',
+    'cent' : 'ENTRANTES',
+    'cprin' : 'PRINCIPALES',
+    'cpo' : 'POSTRES',
+    'cvin' : 'VINOS'
 
   },
   'ca' : {
@@ -94,7 +98,11 @@ var arrLang = {
     'op2' : '"Les pizzes estan boníssimes i la pasta també. Les racions són abundants."',
     'op3' : '"Tots els plats que vam demanar estaven realment bons, es notava que eren casolans."',
     'op4' : '"Pizzeria molt bonica, amb un dinar i atenció excel·lents."',
-    'ct' : 'La Carta'
+    'ct' : 'La Carta',
+    'cent' : 'ENTRANTS',
+    'cprin' : 'PRINCIPALS',
+    'cpo' : 'POSTRES',
+    'cvin' : 'VINS'
   },
   'en' : {
     'nosotros' : 'About Us',
@@ -113,7 +121,11 @@ var arrLang = {
     'op2' : '"The pizzas are delicious and the pasta is too, the portions are plentiful."',
     'op3' : '"All the dishes we ordered were really good, you could tell they were homemade."',
     'op4' : '"Very nice pizzeria, with excellent food and attention."',
-    'ct' : 'The Menu'
+    'ct' : 'The Menu',
+    'cent' : 'STARTERS',
+    'cprin' : 'MAIN DISHES',
+    'cpo' : 'DESSERTS',
+    'cvin' : 'WINES'
   },
   'ru' : {
     'nosotros' : 'О нас',
@@ -132,7 +144,11 @@ var arrLang = {
     'op2' : '«Пицца вкусная, паста тоже, порции обильные».',
     'op3' : '«Все блюда, которые мы заказали, были действительно хорошими, можно сказать, что они были домашними».',
     'op4' : '«Очень хорошая пиццерия, с отличной едой и вниманием».',
-    'ct' : 'Меню'
+    'ct' : 'Меню',
+    'cent' : 'ЗАКУСКИ',
+    'cprin' : 'ГЛАВНЫЙ',
+    'cpo' : 'ДЕСЕРТЫ',
+    'cvin' : 'ВИНА'
   }
 };
 

@@ -203,8 +203,16 @@ h2 {
   margin-bottom: 70px;
   font-family: 'Lato', sans-serif;
   font-weight: bold; }
+#Carta .menu-title2 {
+  font-size: 20px;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 70px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold; }
 #Carta h3 {
-  font-size: 20px; }
+  font-family: 'Cantarell', sans-serif;
+  font-size: 18px; }
 #Carta .row {
   margin-bottom: 100px; }
 #Carta .img-cont {
@@ -221,18 +229,37 @@ h2 {
   vertical-align: text-top;
   height: 110px; }
 #Carta p {
-  font-size: 13px; }
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif; }
 #Carta .split-para {
   display: block;
   margin: 10px 10px 10px 0;
   width: 300px; }
   #Carta .split-para span {
+    font-size: 18px;
     display: block;
     float: right;
     right: 50%;
     margin-left: 10px;
     margin-right: 10px;
     text-align: right; }
+#Carta img {
+  border: 5px solid lightgrey;
+  border-radius: 50%;
+  transition: transform .5s; }
+#Carta img:hover {
+  transform: scale(1.2); }
+#Carta button {
+  height: 40px;
+  width: 150px;
+  border-radius: 6px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  transition: .3s; }
+  #Carta button a {
+    color: white; }
+#Carta button:hover {
+  transition: .3s; }
 
 .video-container {
   position: absolute;
@@ -451,11 +478,29 @@ footer {
   footer .social {
     font-size: 40px; }
     footer .social .fa-instagram {
-      color: white; }
+      color: white;
+      transition: 0.2s; }
+    footer .social .fa-instagram:hover {
+      color: #c13584;
+      transition: 0.2s; }
     footer .social .fa-facebook {
-      color: white; }
+      color: white;
+      transition: 0.2s; }
+    footer .social .fa-facebook:hover {
+      color: #3b5998;
+      transition: 0.2s; }
     footer .social .fa-tripadvisor {
-      color: white; }
+      color: white;
+      transition: 0.2s; }
+    footer .social .fa-tripadvisor:hover {
+      color: #00af87;
+      transition: 0.2s; }
+    footer .social .fa-linkedin {
+      color: white;
+      transition: 0.2s; }
+    footer .social .fa-linkedin:hover {
+      color: #0077b5;
+      transition: 0.2s; }
 
 .under-footer {
   padding: 40px 0;

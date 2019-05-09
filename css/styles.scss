@@ -259,8 +259,17 @@ h2 {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
   }
-  h3 {
+  .menu-title2 {
     font-size: 20px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 70px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+  }
+  h3 {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 18px;
   }
   .row {
     margin-bottom: 100px;
@@ -283,12 +292,14 @@ h2 {
   }
   p {
     font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
   }
   .split-para {
     display: block;
     margin: 10px 10px 10px 0;
     width: 300px;
     span {
+      font-size: 18px;
       display: block;
       float: right;
       right: 50%;
@@ -296,6 +307,28 @@ h2 {
       margin-right: 10px;
       text-align: right;
     }
+  }
+  img {
+    border: 5px solid lightgrey;
+    border-radius: 50%;
+    transition: transform .5s;
+  }
+  img:hover {
+    transform: scale(1.2);
+  }
+  button {
+    height: 40px;
+    width: 150px;
+    border-radius: 6px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: .3s;
+    a {
+      color: white;
+    }
+  }
+  button:hover {
+    transition: .3s;
   }
 }
 
@@ -575,12 +608,35 @@ footer {
     font-size: 40px;
     .fa-instagram {
       color: white;
+      transition: 0.2s;
+    }
+    .fa-instagram:hover {
+      color: #c13584;
+      transition: 0.2s;
     }
     .fa-facebook {
       color: white;
+      transition: 0.2s;
+    }
+    .fa-facebook:hover {
+      color: #3b5998;
+      transition: 0.2s;
     }
     .fa-tripadvisor {
       color: white;
+      transition: 0.2s;
+    }
+    .fa-tripadvisor:hover {
+      color: #00af87;
+      transition: 0.2s;
+    }
+    .fa-linkedin {
+      color: white;
+      transition: 0.2s;
+    }
+    .fa-linkedin:hover {
+      color: #0077b5;
+      transition: 0.2s;
     }
   }
 }
