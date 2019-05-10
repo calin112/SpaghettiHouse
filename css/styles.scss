@@ -212,9 +212,6 @@ h2 {
   overflow: hidden;
 }
 
-.flag {
-  height: 20px;
-}
 #btt {
   display: block;
   position: fixed;
@@ -518,6 +515,7 @@ p.bold {
     border-radius: 50%;
     transition: transform .5s;
     margin-bottom: 40px;
+    overflow: hidden;
   }
   img:hover {
     transform: scale(1.2);
@@ -563,8 +561,6 @@ p.bold {
   }
   .row {
     margin-bottom: 0 !important;
-  }
-  .col-md-4 {
   }
 }
 

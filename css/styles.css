@@ -165,9 +165,6 @@ h2 {
   justify-content: center;
   overflow: hidden; }
 
-.flag {
-  height: 20px; }
-
 #btt {
   display: block;
   position: fixed;
@@ -418,7 +415,8 @@ p.bold {
     border: 10px solid lightgrey;
     border-radius: 50%;
     transition: transform .5s;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    overflow: hidden; }
   #Equipo img:hover {
     transform: scale(1.2); }
   #Equipo h3 {
