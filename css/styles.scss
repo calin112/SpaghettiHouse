@@ -271,8 +271,14 @@ h2 {
     font-family: 'Cantarell', sans-serif;
     font-size: 18px;
   }
-  .row {
+  .container {
     margin-bottom: 100px;
+  }
+  .col-lg-2 {
+    margin-bottom: 50px;
+  }
+  .col-lg-4 {
+    margin-bottom: 50px;
   }
   .img-cont {
     display: block;
@@ -294,20 +300,8 @@ h2 {
     font-size: 13px;
     font-family: 'Montserrat', sans-serif;
   }
-  .split-para {
-    display: block;
-    margin: 10px 10px 10px 0;
-    width: 300px;
-    span {
-      font-size: 18px;
-      display: block;
-      float: right;
-      right: 50%;
-      margin-left: 10px;
-      margin-right: 10px;
-      text-align: right;
-    }
-  }
+  .split-para      {text-align: left; width:49%; display: inline-block;}
+  span { text-align: right; width:50%;  display: inline-block;}
   img {
     border: 5px solid lightgrey;
     border-radius: 50%;
@@ -330,19 +324,32 @@ h2 {
   button:hover {
     transition: .3s;
   }
+
+  .col-lg-2 {
+    img {
+      display:block;
+      margin:auto;
+    }
+  }
 }
 
 .video-container {
-  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: -1;
 }
 
 video {
-  min-width: 100%;
-  min-height: 100%;
+  position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .color-overlay {
@@ -597,7 +604,6 @@ footer {
     span {
       display: block;
       float: right;
-      width: 50%;
       margin-left: 10px;
       margin-right: 40px;
       text-align: right;

@@ -213,8 +213,12 @@ h2 {
 #Carta h3 {
   font-family: 'Cantarell', sans-serif;
   font-size: 18px; }
-#Carta .row {
+#Carta .container {
   margin-bottom: 100px; }
+#Carta .col-lg-2 {
+  margin-bottom: 50px; }
+#Carta .col-lg-4 {
+  margin-bottom: 50px; }
 #Carta .img-cont {
   display: block;
   position: absolute;
@@ -232,17 +236,13 @@ h2 {
   font-size: 13px;
   font-family: 'Montserrat', sans-serif; }
 #Carta .split-para {
-  display: block;
-  margin: 10px 10px 10px 0;
-  width: 300px; }
-  #Carta .split-para span {
-    font-size: 18px;
-    display: block;
-    float: right;
-    right: 50%;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: right; }
+  text-align: left;
+  width: 49%;
+  display: inline-block; }
+#Carta span {
+  text-align: right;
+  width: 50%;
+  display: inline-block; }
 #Carta img {
   border: 5px solid lightgrey;
   border-radius: 50%;
@@ -260,17 +260,26 @@ h2 {
     color: white; }
 #Carta button:hover {
   transition: .3s; }
+#Carta .col-lg-2 img {
+  display: block;
+  margin: auto; }
 
 .video-container {
-  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: -1; }
 
 video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   min-width: 100%;
-  min-height: 100%; }
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden; }
 
 .color-overlay {
   position: absolute;
@@ -471,7 +480,6 @@ footer {
     footer .split-para span {
       display: block;
       float: right;
-      width: 50%;
       margin-left: 10px;
       margin-right: 40px;
       text-align: right; }
